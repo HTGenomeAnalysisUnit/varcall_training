@@ -1,7 +1,7 @@
 FROM debian:bullseye-slim AS binary
-LABEL description="varcall_training"
+LABEL description="internal variant calling course at HT"
 LABEL base_image="debian:bullseye-slim"
-LABEL software="varcall_training"
+LABEL software="varcall"
 LABEL about.home="https://github.com/HTGenomeAnalysisUnit/varcall_training"
 LABEL about.license="GPLv3"
 
