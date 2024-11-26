@@ -49,7 +49,7 @@ RUN apt-get -y install \
 ##install fastp latest
 RUN mkdir fastp \
 	&& cd fastp \
-	&& wget http://opengene.org/fastp/fastp \
+	&& wget --no-check-certificate http://opengene.org/fastp/fastp \
 	&& chmod a+x ./fastp \
 	&& cd ..
 
