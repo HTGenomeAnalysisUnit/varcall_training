@@ -46,8 +46,26 @@ RUN apt-get -y install \
 	zip \
 	unzip
 
+##install fastp latest
+RUN mkdir fastp \
+	&& cd fastp \
+	&& wget http://opengene.org/fastp/fastp \
+	&& chmod a+x ./fastp
+	&& cd ..
 
-##install minimap2
+ENV PATH /opt/fastp:$PATH
+
+#install vcfanno 0.3.5
+RUN mkdir -p vcfanno \
+	&& cd vcfanno \
+	&& wget https://github.com/brentp/vcfanno/releases/download/v0.3.5/vcfanno_linux64 \
+	&& mv vcfanno_linux64 vcfanno \
+	&& chmod a+x ./vcfanno \
+	&& cd ..
+
+ENV PATH /opt/vcfanno:$PATH
+
+##install minimap2 2.28
 RUN wget https://github.com/lh3/minimap2/releases/download/v2.28/minimap2-2.28_x64-linux.tar.bz2 \
 	&& tar -jxvf minimap2-2.28_x64-linux.tar.bz2 \
 	&& rm minimap2-2.28_x64-linux.tar.bz2
