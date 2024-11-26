@@ -50,7 +50,7 @@ RUN apt-get -y install \
 RUN mkdir fastp \
 	&& cd fastp \
 	&& wget http://opengene.org/fastp/fastp \
-	&& chmod a+x ./fastp
+	&& chmod a+x ./fastp \
 	&& cd ..
 
 ENV PATH /opt/fastp:$PATH
