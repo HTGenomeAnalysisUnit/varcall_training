@@ -71,3 +71,11 @@ RUN wget https://github.com/lh3/minimap2/releases/download/v2.28/minimap2-2.28_x
 	&& rm minimap2-2.28_x64-linux.tar.bz2
 
 ENV PATH /opt/minimap2-2.28_x64-linux:$PATH
+
+#install samblaster 0.1.26
+RUN git clone git clone git://github.com/GregoryFaust/samblaster.git \
+	&& cd samblaster \
+	&& git checkout b642639117eafedc760d8b84c0d2c4872b0da084 \
+	&& make
+
+ENV PATH /opt/samblaster:$PATH
