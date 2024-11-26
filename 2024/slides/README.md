@@ -28,9 +28,9 @@ Schedule for the training course, held at Human Technopole on 2024, December 3rd
 
 1. 9:30 am - 10:30 am. Somatic variant calling. [slides]() [trainer](https://humantechnopole.it/en/people/chela-james/)
 2. 10-30 am - 11:30 am. aDNA variant calling. [slides]() [trainer](https://humantechnopole.it/en/people/alessandro-raveane/)
-3. 11:45 am - 13:00 pm. Practical #1. [README](../hands-on/REAMDE.md) [trainer](https://github.com/HTGenomeAnalysisUnit)
+3. 11:45 am - 13:00 pm. Practical #1. [README](../hands-on/README.md) [trainer](https://github.com/HTGenomeAnalysisUnit)
 
 ### Afternoon
 
-3. 14:00 pm - 15:45 pm. Practical #2. [README](../hands-on/REAMDE.md) [trainer](https://github.com/HTGenomeAnalysisUnit)
+3. 14:00 pm - 15:45 pm. Practical #2. [README](../hands-on/README.md) [trainer](https://github.com/HTGenomeAnalysisUnit)
 4. 16:00 pm - 17:00 pm. Pangenome variant calling. [slides]() [trainer](https://andreaguarracino.github.io/)
