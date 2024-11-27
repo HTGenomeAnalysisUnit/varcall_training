@@ -35,6 +35,6 @@ RUN conda create -y -n varcallenv -c conda-forge -c bioconda \
 	samblaster=0.1.26 \
 	bcftools=1.21 \
 	samtools=1.21 \
-	igv=2.7.14
+	igv=2.17.4
 RUN echo "source activate varcallenv" > ~/.bashrc
 ENV PATH /miniconda/envs/varcallenv/bin:$PATH
