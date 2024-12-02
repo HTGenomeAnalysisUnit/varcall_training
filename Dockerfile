@@ -15,6 +15,7 @@ RUN apt-get update
 RUN apt-get -y install \
 	bash \
 	curl \
+	git \
 	python3-dev \
 	python3-pip
 
@@ -46,4 +47,4 @@ RUN conda create -y -n varcallenv -c conda-forge -c bioconda \
 	ncls
 RUN echo "source activate varcallenv" > ~/.bashrc
 ENV PATH /miniconda/envs/varcallenv/bin:$PATH
-RUN pip install git+https://github.com/fakedrtom/SVAFotate.git
+RUN source activate varcallenv && pip install git+https://github.com/fakedrtom/SVAFotate.git
