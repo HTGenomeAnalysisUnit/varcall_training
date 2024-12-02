@@ -34,4 +34,4 @@ Schedule for the training course, held at Human Technopole on 2024, December 3rd
 ### Afternoon
 
 3. 14:00 pm - 15:45 pm. Practical #2. [README](../hands-on/README.md) [trainer](https://github.com/HTGenomeAnalysisUnit)
-4. 16:00 pm - 17:00 pm. Pangenome variant calling. [slides]() [trainer](https://andreaguarracino.github.io/)
+4. 16:00 pm - 17:00 pm. Pangenome variant calling. [slides](https://docs.google.com/presentation/d/1L2RlmVSJXXm8lqPl8yXMThOOykJDMZ4lEodPaNB_KNc/edit?usp=sharing) [trainer](https://andreaguarracino.github.io/)
