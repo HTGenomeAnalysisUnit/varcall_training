@@ -37,13 +37,13 @@ RUN conda create -y -n varcallenv -c conda-forge -c bioconda \
 	samtools=1.21 \
 	igv=2.17.4 \
 	vcfanno=0.3.5 \
-	pandas=1.2.3 \
-	numpy=1.22.3 \
-	pyranges=0.0.95 \
+	pandas \
+	numpy \
+	pyranges \
 	htslib \
 	zlib \
-	cyvcf2=0.30.4 \
-	ncls=0.0.57 \
+	cyvcf2 \
+	ncls \
 	hap.py=0.3.15 \
 	truvari=4.3.1
 RUN echo "source activate varcallenv" > ~/.bashrc
