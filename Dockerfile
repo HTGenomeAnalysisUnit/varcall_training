@@ -45,6 +45,8 @@ RUN conda create -y -n varcallenv -c conda-forge -c bioconda \
 	zlib \
 	cyvcf2 \
 	ncls
-RUN echo "source activate varcallenv" > ~/.bashrc
 ENV PATH /miniconda/envs/varcallenv/bin:$PATH
-RUN source activate varcallenv && pip install git+https://github.com/fakedrtom/SVAFotate.git
+RUN conda run -n varcallenv pip install git+https://github.com/fakedrtom/SVAFotate.git
+
+# Set entry point for the conda environment
+CMD ["bash"]
