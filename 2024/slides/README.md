@@ -17,8 +17,8 @@ Schedule for the training course, held at Human Technopole on 2024, December 3rd
 
 #### Afternoon
 
-4. 14:00 pm - 15:00 pm. Methods for variant calling. [slides]() [trainer](https://humantechnopole.it/en/people/bruno-ariano/)
-5. 15:00 pm - 15:45 pm. Variant visualization. [slides]() [trainer](https://humantechnopole.it/en/people/bruno-ariano/)
+4. 14:00 pm - 15:00 pm. Methods for variant calling. [slides](https://docs.google.com/presentation/d/1ZXBybVpnuygEAlo_EZu9uXCSF2rwxUP2/edit?usp=sharing&ouid=104497679914838096706&rtpof=true&sd=true) [trainer](https://humantechnopole.it/en/people/bruno-ariano/)
+5. 15:00 pm - 15:45 pm. Variant visualization. [slides](https://docs.google.com/presentation/d/1ZXBybVpnuygEAlo_EZu9uXCSF2rwxUP2/edit?usp=sharing&ouid=104497679914838096706&rtpof=true&sd=true) [trainer](https://humantechnopole.it/en/people/bruno-ariano/)
 6. 16:00 pm - 17:00 pm. Methodologies for variant annotation and resources for genomic data. [slides]() [trainer](https://humantechnopole.it/en/people/edoardo-giacopuzzi/)
 
 ### Day 2
