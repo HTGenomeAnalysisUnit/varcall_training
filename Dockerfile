@@ -43,9 +43,7 @@ RUN conda create -y -n varcallenv -c conda-forge -c bioconda \
 	htslib \
 	zlib \
 	cyvcf2 \
-	ncls \
-	hap.py=0.3.15 \
-	truvari=4.3.1
+	ncls
 RUN echo "source activate varcallenv" > ~/.bashrc
 ENV PATH /miniconda/envs/varcallenv/bin:$PATH
 RUN pip install git+https://github.com/fakedrtom/SVAFotate.git
