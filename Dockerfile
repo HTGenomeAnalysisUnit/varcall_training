@@ -9,7 +9,6 @@ ARG DEBIAN_FRONTEND=noninteractive
 #install basic libraries and python
 
 WORKDIR /opt
-
 RUN apt-get update
 
 RUN apt-get -y install \
