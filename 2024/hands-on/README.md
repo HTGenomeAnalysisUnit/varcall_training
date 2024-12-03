@@ -13,9 +13,10 @@
 		- [3. Mark duplicates](#3-mark-duplicates)
 		- [4. Base recalibration](#4-base-recalibration)
 		- [5. Variant calling](#5-variant-calling)
-		- [6. Variant annotation](#6-variant-annotation)
-		- [7. Variant visualization](#7-variant-visualization)
-		- [8. Variant benchmarking](#8-variant-benchmarking)
+		- [6. Variant filtering](#6-variant-filtering)
+		- [7. Variant annotation](#7-variant-annotation)
+		- [8. Variant visualization](#8-variant-visualization)
+		- [9. Variant benchmarking](#9-variant-benchmarking)
 	- [Instructors](#instructors)
 
 ## Introduction
