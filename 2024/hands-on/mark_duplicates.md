@@ -63,7 +63,7 @@ This step is necessary since the variant callers need a coordinate sorted BAM fi
 ```bash
 singularity exec -B /localscratch -B /project/varcall_training -B $PWD \
 	/project/varcall_training/bin/varcall_latest.sif \
-	samtools sort --write-index -O BAM snps.dedup.sam > snps.dedup.bam
+	samtools sort --write-index -O BAM -o snps.dedup.bam snps.dedup.sam
 ```
 
 This will run for approximately 3 minutes using a single CPU and will create the `snps.dedup.bam` and `snps.dedup.bam.bai` files in the current directory. The BAM file contains the reads sorted by coordinates with duplicate reads marked in alignment flag.
