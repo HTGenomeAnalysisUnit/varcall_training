@@ -83,11 +83,20 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	-O z -o $PWD/snps.norm.gatk.joint.vcf.gz $PWD/snps.gatk.vcf.gz
 
 ```
-bcftools norm -m-any --check-ref w -f /project/varcall_training/data/partial/genome/hg38/chr20.fa -O z -o snps.norm.gatk.vcf.gz snps.gatk.vcf.gz
 
 This will run for few seconds only and will create a combined vcf file:
 
 - `snps.gatk.vcf.gz`
+
+### Step5
+```bash
+singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
+	/project/varcall_training/bin/varcall_latest.sif \
+	tabix -p vcf $PWD/snps.norm.gatk.joint.vcf.gz
+```
+
+This will run for few seconds only and will create an index for the vcf file:
+
 
 ### Options explained
 

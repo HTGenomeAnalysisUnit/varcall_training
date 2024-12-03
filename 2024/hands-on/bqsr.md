@@ -1,4 +1,4 @@
-# FASTQ qc
+# Base score quality recalibration (BSQR)
 
 In this chapter we start from aligned BAM files of a short read sequencing experiment and we perform base call quality recalibration (BQSR) [gatk tool](https://gatk.broadinstitute.org/hc/en-us/articles/360035890531-Base-Quality-Score-Recalibration-BQSR).
 
