@@ -28,11 +28,11 @@ Schedule for the training course, held at Human Technopole on 2024, December 3rd
 #### Morning
 
 0. 9:30 am - 9:35 am. Day 2 introduction. [slides](https://docs.google.com/presentation/d/1zsEUrtWpDBfQ6zVXM2_IkGQ53KFcqs2zLpyvD1vtwIY/edit?usp=sharing)
-1. 9:35 am - 10:35 am. Somatic variant calling. [slides]() [trainer](https://humantechnopole.it/en/people/chela-tandiwe-james/)
-2. 10:35 am - 11:35 am. aDNA variant calling. [slides](https://docs.google.com/presentation/d/194Jmhcs7PphBfCC5Mwirv3OFFpexHxkgMXZRlnPTHFM/edit?usp=sharing) [trainer](https://humantechnopole.it/en/people/alessandro-raveane/)
+1. 9:35 am - 10:35 am. Somatic variant calling. [slides](https://htechnopole-my.sharepoint.com/:p:/r/personal/chela_james_fht_org/_layouts/15/Doc.aspx?sourcedoc=%7B9484CF48-06D9-4749-BFF2-620FB7D07777%7D&file=somatic_variants.pptx&wdLOR=c135CE7C6-9927-AC49-A708-6789EAAC4258&fromShare=true&action=edit&mobileredirect=true) [trainer](https://humantechnopole.it/en/people/chela-tandiwe-james/)
+2. 10:35 am - 11:35 am. aDNA variant calling. [slides](https://docs.google.com/presentation/d/1UQAo4RkTeKdWGS6buyfGgly8qhkMeeUPahbzKUH-ZLg/edit?usp=sharing) [trainer](https://humantechnopole.it/en/people/alessandro-raveane/)
 3. 11:50 am - 13:00 pm. Practical #1. [README](../hands-on/README.md) [trainer](https://github.com/HTGenomeAnalysisUnit)
 
 ### Afternoon
 
-3. 14:00 pm - 15:45 pm. Practical #2. [README](../hands-on/README.md) [trainer](https://github.com/HTGenomeAnalysisUnit)
-4. 16:00 pm - 17:00 pm. Pangenome variant calling. [slides](https://docs.google.com/presentation/d/1L2RlmVSJXXm8lqPl8yXMThOOykJDMZ4lEodPaNB_KNc/edit?usp=sharing) [trainer](https://andreaguarracino.github.io/)
+4. 14:00 pm - 15:45 pm. Practical #2. [README](../hands-on/README.md) [trainer](https://github.com/HTGenomeAnalysisUnit)
+5. 16:00 pm - 17:00 pm. Pangenome variant calling. [slides](https://docs.google.com/presentation/d/1L2RlmVSJXXm8lqPl8yXMThOOykJDMZ4lEodPaNB_KNc/edit?usp=sharing) [trainer](https://andreaguarracino.github.io/)
