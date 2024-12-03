@@ -101,6 +101,10 @@ Follow the steps in the [Mark duplicates](mark_duplicates.md) tutorial to mark t
 
 ### 5. Variant calling
 
+We will now perform small and structural variant calling.
+
+Follow the steps in the [SV calling](sv_calling.md) tutorial to call SVs in your alignment.
+
 ### 6. Variant annotation
 
 The last step in our analysis is to annotate the variants called in the previous steps. 

@@ -45,7 +45,8 @@ RUN conda create -y -n varcallenv -c conda-forge -c bioconda \
 	zlib \
 	cyvcf2 \
 	ncls \
-	truvari=4.3.1
+	truvari=4.3.1 \
+	sniffles=2.5.2
 ENV PATH /miniconda/envs/varcallenv/bin:$PATH
 RUN conda run -n varcallenv pip install git+https://github.com/fakedrtom/SVAFotate.git
 
