@@ -38,7 +38,7 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 
 This will run for approximately 10 minutes using a single CPU and will create a single file in the current directory:
 
-- `hg38.snps.bqsr.g.vcf.gz`: the gvcf containing the variant called
+- `hg38.snps.bqsr.g.vcf.gz`: the gvcf containing the variant called only for a the sample HG002
 
 ### Step 2
 
@@ -54,9 +54,8 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 ```
 This will run for few seconds only:
 
-- `cohort.g.vcf.gz`: the aggregated vcf file
+- `cohort.g.vcf.gz`: A VCF containing the pooled variant called from HG002 and HG003
 
-gatk --java-options "-Xmx7g" GenotypeGVCFs -R /project/varcall_training/data/partial/genome/hg38/chr20.fa -V cohort.g.vcf.gz -L chr20 -O output.vcf.gz
 ### Step 3
 ```bash
 singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
@@ -70,15 +69,14 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 
 This will run for few seconds only and will create a combined vcf file:
 
-- `snps.gatk.vcf.gz`
+- `snps.gatk.vcf.gz`: The joint VCF file
 
 ### Step 4
 ```bash
 singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	/project/varcall_training/bin/varcall_latest.sif \
 	bcftools norm -m-any \
-    --check-ref \
-    w \
+    --check-ref w \
     -f /project/varcall_training/data/partial/genome/hg38/chr20.fa \
 	-O z -o $PWD/snps.norm.gatk.joint.vcf.gz $PWD/snps.gatk.vcf.gz
 
@@ -86,7 +84,7 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 
 This will run for few seconds only and will create a combined vcf file:
 
-- `snps.gatk.vcf.gz`
+- `snps.norm.gatk.joint.vcf.gz`: The joint VCF spliited by alleles
 
 ### Step5
 ```bash
@@ -97,6 +95,8 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 
 This will run for few seconds only and will create an index for the vcf file:
 
+- `snps.norm.gatk.joint.vcf.gz.tbi`: The index for the VCF
+
 
 ### Options explained
 
@@ -105,6 +105,8 @@ This will run for few seconds only and will create an index for the vcf file:
 | `--java-options` | How many GB of memory we want to dedicate to this step |
 | `-I` | Input bam file (need to be indexed)|
 | `-R` | Reference genome |
+| `-ERC` | The mode to create the GVCF file |
+| `-L` | a bed file containing the position to map onto |
 | `---known-sites` | set of known site used to build the recalibrator model |
 | `-O` | Output file for the recal table or the bam file depending on which step you are running |
 | `--bqsr-recal-file` | path for the recalibration table |

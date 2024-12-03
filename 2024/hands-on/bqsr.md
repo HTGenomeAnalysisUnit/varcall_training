@@ -48,7 +48,7 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 ```
 This will run for approximately 2 minutes using a single CPU and will create a single BAM file in the current directory:
 
-- `hg38.snps.bqsr.bam`: the table used for step 2 for recalibrating the variants
+- `hg38.snps.bqsr.bam`: the recalibrated bam file
 
 ### Step 3
 
@@ -57,9 +57,9 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	/project/varcall_training/bin/varcall_latest.sif \
 	samtools index $PWD/hg38.snps.bqsr.bam
 ```
-This will run for few seconds only and will create an index for the BAM file:
+This will run for few seconds :
 
-- `hg38.snps.bqsr.bam.bai`
+- `hg38.snps.bqsr.bam.bai`: The index of the bam file
 
 ### Options explained
 
