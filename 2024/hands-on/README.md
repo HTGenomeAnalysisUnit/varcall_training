@@ -98,14 +98,20 @@ The third step in our analysis is to mark the duplicates in the aligned reads. W
 Follow the steps in the [Mark duplicates](mark_duplicates.md) tutorial to mark the duplicates.
 
 ### 4. Base recalibration
+Follow the steps in the [BQSR](bqsr.md) tutorial to do base call quality recalibration of your alignment.
 
 ### 5. Variant calling
 
 We will now perform small and structural variant calling.
+Follow the steps in the [SNV calling](snv_calling.md) tutorial to call SNVs in your alignment.
 
 Follow the steps in the [SV calling](sv_calling.md) tutorial to call SVs in your alignment.
 
-### 6. Variant annotation
+### 6. Variant filtering
+We will now perform variant filtering.
+Follow the steps in the [variant filtering](variant_filtering.md) tutorial to filter SNVs in your joint VCF file.
+
+### 7. Variant annotation
 
 The last step in our analysis is to annotate the variants called in the previous steps. 
 
@@ -120,9 +126,9 @@ For structural variants, we will use:
 
 Follow the steps in the [Variant annotation](variant_annotation.md) tutorial to perform the annotation.
 
-### 7. Variant visualization
+### 8. Variant visualization
 
-### 8. Variant benchmarking
+### 9. Variant benchmarking
 
 (Optional). We can check how our variant callers performed when comparing to a trugh set.
 
