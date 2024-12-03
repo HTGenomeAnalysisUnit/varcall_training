@@ -10,7 +10,6 @@ Schedule for the training course, held at Human Technopole on 2024, December 3rd
 
 #### Morning
 
-
 0. 9:30 am - 9:35 am. Day 1 introduction. [slides](https://docs.google.com/presentation/d/1zsEUrtWpDBfQ6zVXM2_IkGQ53KFcqs2zLpyvD1vtwIY/edit?usp=sharing)
 1. 9:35 am - 10:30 am. Next-generation sequencing generalities and data formats. [slides](https://docs.google.com/presentation/d/11SrtaIwskY4aDMdpt-jlZigaCUOIknxlMDoSuayo1FQ/edit?usp=sharing) [trainer](https://humantechnopole.it/en/people/edoardo-giacopuzzi/)
 2. 10:30 am - 11:15 am. Quality control of raw sequencing data. [slides](https://docs.google.com/presentation/d/11SrtaIwskY4aDMdpt-jlZigaCUOIknxlMDoSuayo1FQ/edit?usp=sharing) [trainer](https://humantechnopole.it/en/people/edoardo-giacopuzzi/) [slides](https://docs.google.com/presentation/d/197CFbBwo3RsUgvaxQ_btV2tDrOPohN1_ZA9dP92qKmg/edit?usp=sharing) [trainer](https://humantechnopole.it/en/people/davide-bolognini/)

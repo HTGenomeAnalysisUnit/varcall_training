@@ -122,9 +122,9 @@ Follow the steps in the [Variant annotation](variant_annotation.md) tutorial to 
 - [Edoardo Giacopuzzi](https://humantechnopole.it/en/people/edoardo-giacopuzzi/)
 - [Davide Bolognini](https://humantechnopole.it/en/people/davide-bolognini/)
 - [Bruno Ariano](https://humantechnopole.it/en/people/bruno-ariano/)
-- [Chela Tandiwe James](https://humantechnopole.it/en/people/chela-tandiwe-james/)
 
 Seminars
 
 - [Andrea Guarracino](https://andreaguarracino.github.io/)
 - [Alessandro Raveane](https://humantechnopole.it/en/people/alessandro-raveane/)
+- [Chela Tandiwe James](https://humantechnopole.it/en/people/chela-tandiwe-james/)
