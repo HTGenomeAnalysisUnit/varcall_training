@@ -89,15 +89,15 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 | `-x` | Presets (minimap2 --help for all presets) |
 | `-t` | Threads |
 | `-R` | Add read group information in .sam |
-| <in.ref> | Reference .fasta |
-| <in.read1> | Read 1 - (single-end or read 1 in paired end) |
+| `<in.ref>` | Reference .fasta |
+| `<in.read1>` | Read 1 - (single-end or read 1 in paired end) |
 | `<in.read2>` | Read 2 (in paired end mode) |
 
 ## samtools
 
 | Option | Description |
 |--------|-------------|
-| `--write-index | Write index on the fly |
+| `--write-index` | Write index on the fly |
 
 
 ### Some statistics
