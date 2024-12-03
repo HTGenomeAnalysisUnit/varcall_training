@@ -15,6 +15,7 @@
 		- [5. Variant calling](#5-variant-calling)
 		- [6. Variant annotation](#6-variant-annotation)
 		- [7. Variant visualization](#7-variant-visualization)
+		- [8. Variant benchmarking](#8-variant-benchmarking)
 	- [Instructors](#instructors)
 
 ## Introduction
@@ -116,6 +117,12 @@ For structural variants, we will use:
 Follow the steps in the [Variant annotation](variant_annotation.md) tutorial to perform the annotation.
 
 ### 7. Variant visualization
+
+### 8. Variant benchmarking
+
+(Optional). We can check how our variant callers performed when comparing to a trugh set.
+
+Follow the steps in the [Variant benchmark](benchmark.md) tutorial to perform the benchmarking.
 
 ## Instructors
 
