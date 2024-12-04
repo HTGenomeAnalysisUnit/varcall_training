@@ -23,7 +23,7 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	/project/varcall_training/bin/sniffles2_v2.2.sif \
 	sniffles \
 	-i /project/varcall_training/data/partial/alignment/hg19.svs.bam \
-	-o svs.vcf.gz
+	-v svs.vcf.gz
 ```
 
 ### Options explained
