@@ -37,8 +37,7 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	-R "@RG\tID:HG002\tPL:ILLUMINA\tSM:HG002_ILLUMINA" \
         /project/varcall_training/data/partial/genome/hg38/chr20.fa \
 	/project/varcall_training/data/partial/fastq/illumina/r1.fq \
-	/project/varcall_training/data/partial/fastq/illumina/r2.fq > 
-	sr.sam 
+	/project/varcall_training/data/partial/fastq/illumina/r2.fq > sr.sam
 ```
 
 Generate .bam, sort and index
