@@ -48,7 +48,8 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	samtools \
         sort \
 	--write-index \
-        sr.sam > sr.bam
+	-o sr.bam \
+        sr.sam
 ```
 
 ### B
@@ -75,7 +76,8 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	samtools \
 	sort \
         --write-index \
-        lr.sam > lr.bam
+	-o lr.bam \
+        lr.sam
 ```
 
 ### Options explained
