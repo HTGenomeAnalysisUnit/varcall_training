@@ -8,6 +8,9 @@ Data folder: `/project/varcall_training/data/partial/alignment`
 
 Files: `hg38.snps.bam` and `hg38.snps.bam.bai`
 
+Data folder: `/project/varcall_training/data/partial/gatk_reference/dbsnp_146.hg38.vcf.gz`
+
+
 ## Suggested computational resources
 
 To process the small test dataset, we suggest the following computational resources:
@@ -27,13 +30,13 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	gatk --java-options "-Xmx7g" BaseRecalibrator \
 	-I /project/varcall_training/data/partial/alignment/hg38.snps.bam \
     -R /project/varcall_training/data/partial/genome/hg38/chr20.fa \
-    --known-sites /project/varcall_training/data/partial/annotations/snps/dbsnp_146.hg38.vcf.gz \
+    --known-sites /project/varcall_training/data/partial/gatk_reference/dbsnp_146.hg38.vcf.gz \
      -O $PWD/recal_data.table
 ```
 
 This will run for approximately 3 minutes using a single CPU and will create a single file in the current directory:
 
-- `recal_data.table`: the table used for step 2 for recalibrating the variants
+- `recal_data.table`: This table will be used in step 2 for recalibrating the variants
 
 ### Step 2
 

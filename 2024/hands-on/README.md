@@ -128,6 +128,10 @@ For structural variants, we will use:
 Follow the steps in the [Variant annotation](variant_annotation.md) tutorial to perform the annotation.
 
 ### 8. Variant visualization
+After generating the BAM and VCF files we will use these for visualization using IGV. 
+
+Follow the steps in the [Variant visualization](visualization.md) tutorial to perform the annotation.
+
 
 ### 9. Variant benchmarking
 

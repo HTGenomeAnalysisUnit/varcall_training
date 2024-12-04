@@ -12,6 +12,11 @@ Data folder: `/project/varcall_training/data/partial/truth`
 
 Files: `snp.ranges.grch38.bed`
 
+Data folder: `/project/varcall_training/data/partial/alignment`
+
+Files: `HG003.snps.bqsr.g.vcf.gz` and `HG003.snps.bqsr.g.vcf.gz.tbi`
+
+
 ## Suggested computational resources
 
 To process the small test dataset, we suggest the following computational resources:
@@ -29,7 +34,7 @@ Navigate to your desired output folder and run the following command:
 singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	/project/varcall_training/bin/varcall_latest.sif \
 	gatk --java-options "-Xmx7g" HaplotypeCaller \
-	-I $PWD/hg38.snps.bqsr.bam \
+	-I /project/varcall_training/data/partial/alignment/hg38.snps.bqsr.bam \
     -R /project/varcall_training/data/partial/genome/hg38/chr20.fa \
     -ERC GVCF \
     -L /project/varcall_training/data/partial/truth/snp.ranges.grch38.bed \
@@ -38,7 +43,7 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 
 This will run for approximately 10 minutes using a single CPU and will create a single file in the current directory:
 
-- `hg38.snps.bqsr.g.vcf.gz`: the gvcf containing the variant called only for a the sample HG002
+- `hg38.snps.bqsr.g.vcf.gz`: the gvcf containing the variant called only for the sample HG002
 
 ### Step 2
 
@@ -47,7 +52,7 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	/project/varcall_training/bin/varcall_latest.sif \
 	gatk --java-options "-Xmx7g" CombineGVCFs \
 	-V $PWD/hg38.snps.bqsr.g.vcf.gz \
-    -V $PWD/HG003.snps.bqsr.g.vcf.gz \
+    -V /project/varcall_training/data/partial/vcf/HG003.snps.bqsr.g.vcf.gz \
     -R /project/varcall_training/data/partial/genome/hg38/chr20.fa \
     -L chr20  \
     -O $PWD/cohort.g.vcf.gz
@@ -55,6 +60,8 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 This will run for few seconds only:
 
 - `cohort.g.vcf.gz`: A VCF containing the pooled variant called from HG002 and HG003
+
+- Hint for a very large number of GVCF to combine I suggest to use GenomicsDBImport which is the equivalento of CombineGVCFs that use a database to store the variants information
 
 ### Step 3
 ```bash
@@ -95,7 +102,7 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 
 This will run for few seconds only and will create an index for the vcf file:
 
-- `snps.norm.gatk.joint.vcf.gz.tbi`: The index for the VCF
+- `snps.norm.gatk.joint.vcf.gz.tbi`: Create the index for the VCF
 
 
 ### Options explained
@@ -104,10 +111,11 @@ This will run for few seconds only and will create an index for the vcf file:
 |--------|-------------|	
 | `--java-options` | How many GB of memory we want to dedicate to this step |
 | `-I` | Input bam file (need to be indexed)|
+| `-V` | A variant calling file VCF (need to be indexed) |
 | `-R` | Reference genome |
+| `-f` |  Reference genome for bcftools |
 | `-ERC` | The mode to create the GVCF file |
-| `-L` | a bed file containing the position to map onto |
-| `---known-sites` | set of known site used to build the recalibrator model |
-| `-O` | Output file for the recal table or the bam file depending on which step you are running |
-| `--bqsr-recal-file` | path for the recalibration table |
+| `-L` | a bed file containing the position to map onto. Otherwise the chromosome where to map |
+| `-O` | Output VCF file in gz format|
+| `--check-ref` | what to do when incorrect or missing REF allele is encountered: exit (e), warn (w), exclude (x), or set/fix (s) bad sites |
 

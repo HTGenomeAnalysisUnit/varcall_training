@@ -8,7 +8,7 @@ Data folder: `/project/varcall_training/data/partial/vcf`
 
 Files: `snps.norm.gatk.joint.vcf.gz` and `snps.norm.gatk.joint.vcf.gz.tbi`
 
-Data folder: `/project/varcall_training/data/partial/annotations/snps`
+Data folder: `/project/varcall_training/data/partial/gatk_reference`
 
 Files: `dbsnp_146.hg38.vcf.gz` and `hapmap_3.3.hg38.vcf.gz`
 
@@ -30,10 +30,10 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	gatk --java-options "-Xmx7g" VariantRecalibrator \
     -V /project/varcall_training/data/partial/vcf/snps.norm.gatk.joint.vcf.gz \
     --trust-all-polymorphic \
-    -mode SNP  \
+    -mode BOTH  \
     --max-gaussians 1 \
-    --resource:hapmap,known=false,training=true,truth=true,prior=15 /project/varcall_training/data/partial/annotations/snps/hapmap_3.3.hg38.vcf.gz \
-    --resource:dbsnp,known=true,training=false,truth=false,prior=7 /project/varcall_training/data/partial/annotations/snps/dbsnp_146.hg38.vcf.gz \
+    --resource:hapmap,known=false,training=true,truth=true,prior=15 /project/varcall_training/data/partial/gatk_reference/hapmap_3.3.hg38.vcf.gz \
+    --resource:dbsnp,known=true,training=false,truth=false,prior=7 /project/varcall_training/data/partial/gatk_reference/dbsnp_146.hg38.vcf.gz \
     -an QD \
     -an MQRankSum \
     -an ReadPosRankSum \
@@ -52,21 +52,7 @@ This will run for only few seconds using a single CPU and will create a single f
 - `cohort_snps.tranches`: the table with the tranches where each variant belong
 
 ### Step 2
-gatk --java-options "-Xmx7g" ApplyVQSR \
 
-    -R reference/hg38/Homo_sapiens_assembly38.fasta \
-
-    -V /project/varcall_training/data/partial/vcf/snps.norm.gatk.joint.vcf.gz \
-
-    -O /output.vqsr.vcf \
-
-    --truth-sensitivity-filter-level 99.0 \
-
-    --tranches-file output/cohort_snps.tranches \
-
-    --recal-file output/cohort_snps.recal \
-
-    -mode SNP
 ```bash
 singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	/project/varcall_training/bin/varcall_latest.sif \
@@ -88,8 +74,11 @@ This will run for few seconds only using a single CPU and will create a single V
 | Option | Description |
 |--------|-------------|	
 | `--java-options` | How many GB of memory we want to dedicate to this step |
-| `-I` | Input bam file (need to be indexed)|
+| `-V` | A variant calling file VCF (need to be indexed) |
 | `-R` | Reference genome |
-| `---known-sites` | set of known site used to build the recalibrator model |
-| `-O` | Output file for the recal table or the bam file depending on which step you are running |
-| `--bqsr-recal-file` | path for the recalibration table |
+| `--trust-all-polymorphic` | Trust that all the input training sets' unfiltered records contain only polymorphic sites to drastically speed up the computation |
+| `-O` | Output file for the recal table or the VCF file depending on which step you are running |
+| `mode` | Either SNP, INDEL or BOTH, depending what you want to recalibrate |
+| `resource` | Which reference to use to train and validate the ML model|
+| `an` | Which annotation to use to train the model|
+| `--truth-sensitivity-filter-level` | Where to set the sensitivity filter|
