@@ -45,7 +45,7 @@ All the tools used in the training are available in this Singularity container: 
 Remember to execute all the command in a compute node. First of all, request an interactive session:
 
 ```bash
-srun --pty -p interactive --mem 8G --cpus-per-task 1 --time 4:00:00 /bin/bash
+srun --pty -p cpu-interactive --mem 8G --cpus-per-task 1 --time 4:00:00 /bin/bash
 ```
 
 You should created a dedicated folder for the training in your group space or in your home directory. For example you can create a varcall_training folder in you home directory
