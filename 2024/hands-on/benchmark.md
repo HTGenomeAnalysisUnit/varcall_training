@@ -37,7 +37,7 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	truvari \
 	bench \
 	-s 0 \
-	-b /project/varcall_training/data/partial/truth/snps/snps.vcf.gz \
+	-b /project/varcall_training/data/partial/truth/snps/snp.vcf.gz \
 	-c /project/varcall_training/data/partial/vcf/snps.norm.gatk.vcf.gz \
 	-o snps_benchmark
 ```
