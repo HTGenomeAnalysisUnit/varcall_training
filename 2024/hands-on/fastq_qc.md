@@ -25,7 +25,7 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	fastp \
 	-i /project/varcall_training/data/partial/fastq/illumina/r1.fq \
 	-I /project/varcall_training/data/partial/fastq/illumina/r2.fq \
-	-o $PWD/r1.fastp.fq.gz -O $PWD/r2.fastp.fq \
+	-o $PWD/r1.fastp.fq.gz -O $PWD/r2.fastp.fq.gz \
 	-h fastp.html -j fastp.json \
 	-l 30 -r -p -w 1 -V
 ```
