@@ -1,4 +1,4 @@
-The 2$^{nd}$ genomic variant calling training course at Human Technopole, coordinated by members of the [Genome Analysis Unit](https://github.com/HTGenomeAnalysisUnit). 
+The 2nd genomic variant calling training course at Human Technopole, coordinated by members of the [Genome Analysis Unit](https://github.com/HTGenomeAnalysisUnit). 
 
 ## Schedule and slides content
 
