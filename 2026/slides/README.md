@@ -12,7 +12,7 @@ Schedule for the training course, held at Human Technopole on 2026, February 2-6
 
 0. 9:30 am - 10:00 am. Course introduction. Day 1 introduction. [slides](XXX)
 1. 10:00 am - 11:30 am. Next-generation sequencing generalities, data formats and quality control.  [slides](XXX) [trainer](https://humantechnopole.it/en/people/edoardo-giacopuzzi/)
-2. 11:30 am - 13:00 pm. Third generation sequencing. [slides](https://docs.google.com/presentation/d/18NVg6IuOgd5WUUJ9v0sEfoKMO2pT93bESmcAiJZgMdU/edit?usp=sharing) [trainer](https://humantechnopole.it/en/people/edoardo-giacopuzzi/) [slides](XXX) [trainer](https://humantechnopole.it/en/people/davide-bolognini/)
+2. 11:30 am - 13:00 pm. Third generation sequencing. [slides](https://docs.google.com/presentation/d/18NVg6IuOgd5WUUJ9v0sEfoKMO2pT93bESmcAiJZgMdU/edit?usp=sharing) [trainer](https://humantechnopole.it/en/people/davide-bolognini/)
 
 #### Afternoon
 
