@@ -26,7 +26,7 @@ Schedule for the training course, held at Human Technopole on 2026, February 2-6
 #### Morning
 
 0. 9:30 am - 9:35 am. Day 2 introduction.
-1. 9:35 am - 11:00 am. Resequencing [slides](https://docs.google.com/presentation/d/1LjuE2-LhZbdxDipeYbuRw9Ag4LK9xb_Qtzmf1RccAuo/edit?usp=sharing)) [trainer](https://humantechnopole.it/en/people/davide-bolognini/)
+1. 9:35 am - 11:00 am. Resequencing [slides](https://docs.google.com/presentation/d/1LjuE2-LhZbdxDipeYbuRw9Ag4LK9xb_Qtzmf1RccAuo/edit?usp=sharing) [trainer](https://humantechnopole.it/en/people/davide-bolognini/)
 2. 11:00 am - 13:00 am. De novo genome assembly [slides](https://docs.google.com/presentation/d/1ND3BAS0cjxUcZyKzzf1MeKXErL-bYmGTGME6YiA_Om0/edit?usp=sharing) [trainer](https://humantechnopole.it/en/people/davide-bolognini/) 
 
 #### Afternoon
