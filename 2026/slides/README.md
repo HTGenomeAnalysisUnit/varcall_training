@@ -25,8 +25,8 @@ Schedule for the training course, held at Human Technopole on 2026, February 2-6
 
 #### Morning
 
-0. 9:30 am - 9:35 am. Day 2 introduction. [slides](XXX)
-1. 9:35 am - 11:00 am. Resequencing [slides](XXX) [trainer](https://humantechnopole.it/en/people/davide-bolognini/)
+0. 9:30 am - 9:35 am. Day 2 introduction.
+1. 9:35 am - 11:00 am. Resequencing [slides]([XXX](https://docs.google.com/presentation/d/1LjuE2-LhZbdxDipeYbuRw9Ag4LK9xb_Qtzmf1RccAuo/edit?usp=sharing)) [trainer](https://humantechnopole.it/en/people/davide-bolognini/)
 2. 11:00 am - 13:00 am. De novo genome assembly [slides](https://docs.google.com/presentation/d/1ND3BAS0cjxUcZyKzzf1MeKXErL-bYmGTGME6YiA_Om0/edit?usp=sharing) [trainer](https://humantechnopole.it/en/people/davide-bolognini/) 
 
 #### Afternoon
@@ -40,7 +40,7 @@ Schedule for the training course, held at Human Technopole on 2026, February 2-6
 
 #### Morning
 
-0. 9:30 am - 9:35 am. Day 3 introduction. [slides](XXX)
+0. 9:30 am - 9:35 am. Day 3 introduction.
 1. 9:35 am - 11:00 am. Variant calling and genotyping [slides](XXX) [trainer](https://humantechnopole.it/en/people/edoardo-giacopuzzi/)
 2. 11:00 am - 13:00 am. Variant annotation and prioritization [slides](XXX) [trainer](https://humantechnopole.it/en/people/bruno-ariano/) 
 
@@ -55,7 +55,7 @@ Schedule for the training course, held at Human Technopole on 2026, February 2-6
 
 #### Morning
 
-0. 9:30 am - 9:35 am. Day 4 introduction. [slides](XXX)
+0. 9:30 am - 9:35 am. Day 4 introduction.
 1. 9:35 am - 11:00 am. Seminar #1: Somatic Variant Calling [slides](XXX) [speaker](https://www.embl.org/people/person/tobias-rausch/)
 2. 11:00 am - 13:00 am.  Practical #4. [README](../hands-on/README.md) [trainer](https://github.com/HTGenomeAnalysisUnit)
 
@@ -70,7 +70,7 @@ Schedule for the training course, held at Human Technopole on 2026, February 2-6
 
 #### Morning
 
-0. 9:30 am - 9:35 am. Day 5 introduction. [slides](XXX)
+0. 9:30 am - 9:35 am. Day 5 introduction.
 1. 9:35 am - 11:00 am. Seminar #3: Variant Calling in Single Cells [slides](XXX) [speaker](https://www.mdc-berlin.de/sanders)
 2. 11:00 am - 13:00 am.  Seminar #4: Pangenomics [slides](XXX) [trainer](https://humantechnopole.it/en/people/chiara.paleni/) [trainer](https://humantechnopole.it/en/people/davide-bolognini/)
 
