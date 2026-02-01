@@ -12,7 +12,7 @@ To process the small test dataset, we suggest the following computational resour
 Remember to execute all the command in a compute node. First of all, request an interactive session:
 
 ```bash
-srun --pty -p cpu-interactive --mem 8G --cpus-per-task 1 --time 4:00:00 /bin/bash
+srun --pty -p cpu-interactive --mem 12G --cpus-per-task 2 --time 4:00:00 /bin/bash
 ```
 
 ## Objective
@@ -161,7 +161,11 @@ Run `cat ${SAMPLE_ID}_flagstat.txt` and check:
 2. **Properly Paired %:** Should be high (>95%).
 3. **Duplicates:** Look at the number of duplicated reads. A good WGS sample should have about 5-7% duplicated reads among mapped reads. (Note: `samblaster` marks them but doesn't remove them).
 
-### The bcftools stats plots
+### The `VerifyBamID` text file
+
+Look for the `FREEMIX` value in the `${SAMPLE_ID}_verifybamid.selfSM` file. This value estimates the fraction of contamination in the sample measuring the proportion of reads coming from a different individual. A good sample should have `FREEMIX < 0.03` (i.e., <3% contamination).
+
+### The `bcftools stats` plots
 
 You have to look at the PDF file `vcf_plots/summary.pdf` and in particular at the plots about number of variants per sample, number of het calls and ratio of het/hom.
 
