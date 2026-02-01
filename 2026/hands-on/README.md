@@ -23,7 +23,7 @@ In general, you should execute all commands in a compute node in a dedicated fol
 
 Please refer to the course [GitHub repository](https://github.com/HTGenomeAnalysisUnit/varcall_training/tree/main/2026) for the materials used in the training and instructions.
 
-### Data 
+### Data
 
 The test datasets used in the training are available in the `/project/varcall_training/data/partial` folder on the HT cluster. The data is organized in subfolders according to the analysis step, the type of data and the technology used for sequencing.
 
@@ -64,12 +64,18 @@ The `-B` option is used to bind the directories to the container. The `$PWD` var
 
 ### Suggested computational resources
 
-To process the small test dataset, we suggest the following computational resources for most of the steps:
+To process the small test dataset, we suggest the following computational resources for most of the steps, unless otherwise specified:
 
 - CPUs: 1
 - Memory: 8 GB
 
 ## Workflow
+
+### 1. Raw data QC
+
+The first step in our analysis is to perform quality control (QC) on the raw data, including FASTQ and BAM files. We will use a combination of tools (`fastqc`, `fastp`, `samtools`, `bcftools`) to perform this task. This task is performed only for short-reads data.
+
+Follow the steps in the [raw data QC tutorial](raw_data_qc.md) tutorial to perform the QC. Solutions are available in the [raw data QC solutions](raw_data_qc_solutions.md) document, but we invite you to do not look at them before we dsicussed together your results.
 
 ## Instructors
 
