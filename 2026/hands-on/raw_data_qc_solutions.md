@@ -18,8 +18,8 @@ In the FastQC/fastp report:
 
 Look specifically at the **Adapter Content** module in FastQC and/or fastp reports.
 
-- *Question:* Which adapter sequence is detected?
-- *Question:* At what cycle (roughly) does the adapter contamination start rising?
+- Question: Which adapter sequence is detected?
+- Question: At what cycle (roughly) does the adapter contamination start rising?
 
 **The Fix:** These reads are shorter than the sequencer cycle (150bp), so the machine read into the plastic adapter. You must trim this off. Luckly `fastp` does this automatically for you.
 
@@ -101,7 +101,10 @@ FastQC will likely show **Green/Pass** for everything. The data looks clean.
 
 Check **Sequence Length Distribution** in FastQC / fastp reports.
 
-- Instead of a single peak at 150bp, you see a curve or plateau ranging from 50bp to 150bp.
+- Instead of a single peak at 150bp, you see a curve or small plateau ranging from 50bp to 150bp.
+
+**Cause:**
+
 - This data has **already been trimmed** (or pre-processed) before you got it.
 - If the fraction of very short reads (<50bp) is high, or you see a peak at unexpected lengths, this may indicate problems during sequencing or library prep.
 
