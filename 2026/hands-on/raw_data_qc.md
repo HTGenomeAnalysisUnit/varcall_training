@@ -147,7 +147,12 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 plot-vcfstats -p vcf_plots merged_variants.stats
 ```
 
-In the `vcf_plots` folder you will find multiple plots summarizing the variant statistics and a `summary.pdf` file with all plots combined. Keep in mind here the samples are numbered from 0 to 7 (not from 1 to 8).
+In the `vcf_plots` folder you will find multiple plots summarizing the variant statistics and a `summary.pdf` file with all plots combined. Expecially, you should look at 
+
+- `snps_by_sample.0.png`: Number of variants per sample.
+- `het_by_sample.0.png`: Heterozigosity. Number of heterozygous calls / number of homozigous calls per sample.
+
+Keep in mind here the samples are numbered from 0 to 7 (not from 1 to 8).
 
 ---
 
