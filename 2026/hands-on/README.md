@@ -73,9 +73,11 @@ To process the small test dataset, we suggest the following computational resour
 
 ### 1. Raw data QC
 
-The first step in our analysis is to perform quality control (QC) on the raw data, including FASTQ and BAM files. We will use a combination of tools (`fastqc`, `fastp`, `samtools`, `bcftools`) to perform this task. This task is performed only for short-reads data.
+The first step in our analysis is to perform quality control (QC) on the raw data, including FASTQ and BAM files. We will use a combination of tools (`fastqc`, `fastp`, `samtools`, `bcftools`) to perform this task. This task is primarly only for short-reads data.
 
 Follow the steps in the [raw data QC tutorial](raw_data_qc.md) tutorial to perform the QC. Solutions are available in the [raw data QC solutions](raw_data_qc_solutions.md) document, but we invite you to do not look at them before we dsicussed together your results.
+
+We have a [small tutorial](raw_data_ont.md) demonstrating how to perform basecalling, quality qc across different basecalling models as well as an initial calling of base modifications on ONT data. This is not meant to be exhaustive and serves just as a proof-of-concept to enhance in-class explanations
 
 ## Instructors
 
