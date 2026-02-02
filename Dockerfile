@@ -54,7 +54,10 @@ RUN conda create -y -n varcallenv -c conda-forge -c bioconda \
     verifybamid2 \
     matplotlib \
     tectonic \
-    ont-modkit
+    ont-modkit \
+    spades \
+    hifiasm \
+    seqtk
 
 ENV PATH=/miniconda/envs/varcallenv/bin:$PATH
 
