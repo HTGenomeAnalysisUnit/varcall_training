@@ -57,7 +57,7 @@ RUN conda create -y -n varcallenv -c conda-forge -c bioconda \
     ont-modkit \
     spades \
     hifiasm \
-    seqtk
+    seqkit
 
 ENV PATH=/miniconda/envs/varcallenv/bin:$PATH
 
