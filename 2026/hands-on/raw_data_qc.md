@@ -85,11 +85,12 @@ fastp \
 	--html ${SAMPLE_ID}_fastp.html
 
 # Run fastqc
+mkdir fastqc_${SAMPLE_ID}
 singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	/project/varcall_training/bin/varcall_latest.sif \
 fastqc \
 	--threads 2 \
-	--outdir fastqc_${SAMPLE_ID} \
+	--outdir ./fastqc_${SAMPLE_ID} \
 	$R1 \
 	$R2
 ```
