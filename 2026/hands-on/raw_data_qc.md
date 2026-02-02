@@ -123,7 +123,7 @@ verifybamid2 \
   --SVDPrefix /project/varcall_training/data/simulated/ref/population_with_genotypes.vcf \
   --BamFile /project/varcall_training/data/simulated/exercise_data/${SAMPLE_ID}/${SAMPLE_ID}.dedup.sort-coordinate.bam \
   --Reference /project/varcall_training/data/simulated/ref/chr20.fa \
-  --NumThread 4 \
+  --NumThread 2 \
   --Output ${SAMPLE_ID}_verifybamid
 ```
 
