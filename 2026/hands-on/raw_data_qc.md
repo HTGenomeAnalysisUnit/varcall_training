@@ -119,7 +119,7 @@ In the real-life you will probably use files from the 1000 Genomes Project or gn
 ```bash
 singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	/project/varcall_training/bin/varcall_latest.sif \
-VerifyBamID \
+verifybamid2 \
   --SVDPrefix /project/varcall_training/data/simulated/ref/population_with_genotypes.vcf \
   --BamFile /project/varcall_training/data/simulated/exercise_data/${SAMPLE_ID}/${SAMPLE_ID}.dedup.sort-coordinate.bam \
   --Reference /project/varcall_training/data/simulated/ref/chr20.fa \
