@@ -66,6 +66,7 @@ singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	/project/varcall_training/bin/varcall_latest.sif \
 fastp \
 	--thread 2 \
+	--detect_adapter_for_pe \
 	-i $R1 \
 	-I $R2 \
 	-o ${SAMPLE_ID}_clean_R1.fq.gz \
