@@ -17,7 +17,17 @@ srun --pty -p cpu-interactive --mem 12G --cpus-per-task 2 --time 4:00:00 /bin/ba
 
 ## Objective
 
-You have received sequencing data for Human Chromosome 20 from 8 different sequencing runs. Most of them have critical issues. Your job is to use Quality Control (QC) tools to diagnose the specific problem in each dataset and propose a fix.
+You have received sequencing data for Human Chromosome 20 from 8 different sequencing runs performed on Illumina sequencer using a 2x150bp paired-end protocol.
+
+Based on that you expect:
+
+- High-quality reads (Phred score > 30 across most of the read length).
+- Properly paired reads with mean size around 150bp.
+- Low levels of uncalled bases (N content < 1%).
+- High mapping rate to the human reference genome (>98%).
+- Low level of sequence duplication (5-7% or less).
+
+Your job is to use Quality Control (QC) tools to diagnose each dataset and identify any specific problem they may have, and propose a fix.
 
 We will see in the next day how to align the reads and call variants, but for now we will focus on diagnosing and fixing the raw data quality issues.
 
@@ -134,10 +144,10 @@ We can then use `plot-vcfstats` to visualize the statistics.
 ```bash
 singularity exec -B $PWD -B /project/varcall_training -B /localscratch \
 	/project/varcall_training/bin/varcall_latest.sif \
-plot-vcfstats -s -p vcf_plots merged_variants.stats
+plot-vcfstats -p vcf_plots merged_variants.stats
 ```
 
-In the `vcf_plots` folder you will find multiple plots summarizing the variant statistics and a `summary.pdf` file with all plots combined.
+In the `vcf_plots` folder you will find multiple plots summarizing the variant statistics and a `summary.pdf` file with all plots combined. Keep in mind here the samples are numbered from 0 to 7 (not from 1 to 8).
 
 ---
 
