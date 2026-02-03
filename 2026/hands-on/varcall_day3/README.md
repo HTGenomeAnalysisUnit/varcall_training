@@ -12,7 +12,14 @@ This README demonstrates how to perform variant calling using GATK (Genome Analy
 
 ### 1.1 Setting things up
 
+Log to github codespaces and ask for the smallest machine with 2 cores.
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/HTGenomeAnalysisUnit/varcall_training)
+
+When you open the virtual machine you will see a VS code interface with terminal and you are located at `/workspaces/varcall_training`.
 git clone https://github.com/HTGenomeAnalysisUnit/varcall_training.git
+
+Once inside the repo follow these steps
 
 cd varcall_training/2026/hands-on/varcall_day3/references
 
