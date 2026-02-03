@@ -1,10 +1,11 @@
 # Use the standard Microsoft DevContainer Ubuntu base image
-FROM mcr.microsoft.com/devcontainers/base:ubuntu-22.04
+FROM mcr.microsoft.com/devcontainers/base:ubuntu
 
 LABEL maintainer="Edoardo Giacopuzzi <edoardo.giacopuzzi@fht.org>"
 
 # Avoid prompts from apt
 ENV DEBIAN_FRONTEND=noninteractive
+USER root
 
 # 1. Install system dependencies required for Micromamba/Bioinformatics
 RUN apt-get update && apt-get install -y --no-install-recommends \
