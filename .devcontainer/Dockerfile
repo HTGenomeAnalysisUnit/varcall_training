@@ -27,13 +27,16 @@ RUN curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bi
 	&& mv bin/micromamba /usr/local/bin/micromamba
 
 # 4. Create the directory
-RUN mkdir -p ${MAMBA_ROOT_PREFIX}
+RUN mkdir -p ${MAMBA_ROOT_PREFIX} \
+	&& chown -R vscode:vscode ${MAMBA_ROOT_PREFIX} \
+	&& chmod -R 775 ${MAMBA_ROOT_PREFIX}
 
 # 6. Create the environment and install tools
 # We create a 'bioinfo' env but also initialize the shell so commands work immediately
 # - htslib includes: bgzip, tabix
 # - bwa includes: bwa mem
 # - gatk4 includes: gatk >= 4
+USER vscode
 RUN micromamba create -y -n base -c bioconda -c conda-forge \
 	samtools \
 	bcftools \
@@ -47,3 +50,5 @@ RUN micromamba create -y -n base -c bioconda -c conda-forge \
 # 7. Init shell for bash and zsh (standard in Codespaces)
 RUN micromamba shell init --shell bash --root-prefix=${MAMBA_ROOT_PREFIX} \
 	&& micromamba shell init --shell zsh --root-prefix=${MAMBA_ROOT_PREFIX}
+
+USER root
