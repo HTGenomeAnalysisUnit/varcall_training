@@ -61,7 +61,7 @@ RUN micromamba install -y -n base -c bioconda -c conda-forge \
 	tectonic \
 	ont-modkit
 
-RUN conda run -n base pip install git+https://github.com/fakedrtom/SVAFotate.git \
+RUN micromamba run -n base pip install git+https://github.com/fakedrtom/SVAFotate.git \
 	&& micromamba clean --all --yes
 
 # 7. Init shell for bash and zsh (standard in Codespaces)
