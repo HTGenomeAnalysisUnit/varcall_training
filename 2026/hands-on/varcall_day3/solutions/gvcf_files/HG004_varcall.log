@@ -1,0 +1,66 @@
+11:32:48.660 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/ssu/gassu/software/gatk/4.2.5.0/gatk-package-4.2.5.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Feb 03, 2026 11:32:48 AM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+11:32:48.778 INFO  HaplotypeCaller - ------------------------------------------------------------
+11:32:48.778 INFO  HaplotypeCaller - The Genome Analysis Toolkit (GATK) v4.2.5.0
+11:32:48.779 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
+11:32:48.779 INFO  HaplotypeCaller - Executing as bruno.ariano@cnode31 on Linux v4.18.0-477.13.1.el8_8.x86_64 amd64
+11:32:48.779 INFO  HaplotypeCaller - Java runtime: OpenJDK 64-Bit Server VM v17.0.10+7
+11:32:48.779 INFO  HaplotypeCaller - Start Date/Time: February 3, 2026 at 11:32:48 AM CET
+11:32:48.779 INFO  HaplotypeCaller - ------------------------------------------------------------
+11:32:48.779 INFO  HaplotypeCaller - ------------------------------------------------------------
+11:32:48.779 INFO  HaplotypeCaller - HTSJDK Version: 2.24.1
+11:32:48.779 INFO  HaplotypeCaller - Picard Version: 2.25.4
+11:32:48.779 INFO  HaplotypeCaller - Built for Spark Version: 2.4.5
+11:32:48.780 INFO  HaplotypeCaller - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+11:32:48.780 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+11:32:48.780 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+11:32:48.780 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+11:32:48.780 INFO  HaplotypeCaller - Deflater: IntelDeflater
+11:32:48.780 INFO  HaplotypeCaller - Inflater: IntelInflater
+11:32:48.780 INFO  HaplotypeCaller - GCS max retries/reopens: 20
+11:32:48.780 INFO  HaplotypeCaller - Requester pays: disabled
+11:32:48.780 INFO  HaplotypeCaller - Initializing engine
+11:32:49.000 INFO  FeatureManager - Using codec BEDCodec to read file file:///home/bruno.ariano/varcall_training/2026/hands-on/varcall_day3/solutions/../chr20_teaching_genes_10kbflank.bed
+11:32:49.008 INFO  IntervalArgumentCollection - Processing 1905065 bp from intervals
+11:32:49.013 INFO  HaplotypeCaller - Done initializing engine
+11:32:49.014 INFO  HaplotypeCallerEngine - Tool is in reference confidence mode and the annotation, the following changes will be made to any specified annotations: 'StrandBiasBySample' will be enabled. 'ChromosomeCounts', 'FisherStrand', 'StrandOddsRatio' and 'QualByDepth' annotations have been disabled
+11:32:49.021 INFO  HaplotypeCallerEngine - Standard Emitting and Calling confidence set to 0.0 for reference-model confidence output
+11:32:49.021 INFO  HaplotypeCallerEngine - All sites annotated with PLs forced to true for reference-model confidence output
+11:32:49.082 INFO  NativeLibraryLoader - Loading libgkl_utils.so from jar:file:/ssu/gassu/software/gatk/4.2.5.0/gatk-package-4.2.5.0-local.jar!/com/intel/gkl/native/libgkl_utils.so
+11:32:49.096 INFO  NativeLibraryLoader - Loading libgkl_pairhmm_omp.so from jar:file:/ssu/gassu/software/gatk/4.2.5.0/gatk-package-4.2.5.0-local.jar!/com/intel/gkl/native/libgkl_pairhmm_omp.so
+11:32:49.118 INFO  IntelPairHmm - Using CPU-supported AVX-512 instructions
+11:32:49.118 INFO  IntelPairHmm - Flush-to-zero (FTZ) is enabled when running PairHMM
+11:32:49.119 INFO  IntelPairHmm - Available threads: 4
+11:32:49.119 INFO  IntelPairHmm - Requested threads: 4
+11:32:49.119 INFO  PairHMM - Using the OpenMP multi-threaded AVX-accelerated native PairHMM implementation
+11:32:49.197 INFO  ProgressMeter - Starting traversal
+11:32:49.197 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+11:32:50.099 WARN  InbreedingCoeff - InbreedingCoeff will not be calculated at position chr20:1882863 and possibly subsequent; at least 10 samples must have called genotypes
+11:32:59.201 INFO  ProgressMeter -       chr20:10672586              0.2                   910           5458.4
+11:33:09.234 INFO  ProgressMeter -       chr20:42172014              0.3                  2350           7037.3
+11:33:19.257 INFO  ProgressMeter -       chr20:42455429              0.5                  3800           7585.1
+11:33:29.266 INFO  ProgressMeter -       chr20:42757912              0.7                  5260           7876.6
+11:33:39.312 INFO  ProgressMeter -       chr20:43127090              0.8                  6880           8237.2
+11:33:49.381 INFO  ProgressMeter -       chr20:47600893              1.0                  8310           8284.9
+11:33:55.825 INFO  HaplotypeCaller - 317 read(s) filtered by: MappingQualityReadFilter 
+0 read(s) filtered by: MappingQualityAvailableReadFilter 
+0 read(s) filtered by: MappedReadFilter 
+0 read(s) filtered by: NotSecondaryAlignmentReadFilter 
+0 read(s) filtered by: NotDuplicateReadFilter 
+0 read(s) filtered by: PassesVendorQualityCheckReadFilter 
+0 read(s) filtered by: NonZeroReferenceLengthAlignmentReadFilter 
+0 read(s) filtered by: GoodCigarReadFilter 
+0 read(s) filtered by: WellformedReadFilter 
+317 total reads filtered
+11:33:55.825 INFO  ProgressMeter -       chr20:58920741              1.1                  9271           8348.9
+11:33:55.825 INFO  ProgressMeter - Traversal complete. Processed 9271 total regions in 1.1 minutes.
+11:33:55.840 INFO  VectorLoglessPairHMM - Time spent in setup for JNI call : 0.103660232
+11:33:55.841 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 4.872015134000001
+11:33:55.841 INFO  SmithWatermanAligner - Total compute time in java Smith-Waterman : 6.05 sec
+11:33:55.841 INFO  HaplotypeCaller - Shutting down engine
+[February 3, 2026 at 11:33:55 AM CET] org.broadinstitute.hellbender.tools.walkers.haplotypecaller.HaplotypeCaller done. Elapsed time: 1.12 minutes.
+Runtime.totalMemory()=541065216
+Using GATK jar /ssu/gassu/software/gatk/4.2.5.0/gatk-package-4.2.5.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx7g -jar /ssu/gassu/software/gatk/4.2.5.0/gatk-package-4.2.5.0-local.jar HaplotypeCaller -I ../bam_files/HG004.chr20.subset.rg.smaller.bam -R ../../references/chr20.fa -ERC GVCF -L ../chr20_teaching_genes_10kbflank.bed -O gvcf_files/HG004.g.vcf.gz
