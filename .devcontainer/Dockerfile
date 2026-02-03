@@ -24,8 +24,7 @@ ENV PATH="${MAMBA_ROOT_PREFIX}/bin:${PATH}"
 # 3. Install Micromamba
 # We verify the binary and install it to /usr/local/bin for global access
 RUN curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba \
-	&& mv bin/micromamba /usr/local/bin/micromamba \
-	&& rm -rf bin
+	&& mv bin/micromamba /usr/local/bin/micromamba
 
 # 4. Create the directory
 RUN mkdir -p ${MAMBA_ROOT_PREFIX}
