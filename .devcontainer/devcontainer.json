@@ -1,0 +1,23 @@
+{
+  "name": "Variant Calling Training Dev Container",
+  "image": "ghcr.io/htgenomeanalysisunit/varcall_training:latest",
+  "workspaceFolder": "/workspaces/varcall_training",
+  "remoteUser": "root",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/conda/bin/python",
+        "python.terminal.activateEnvironment": true
+      },
+      "extensions": [
+        "EditorConfig.EditorConfig",
+        "mechatroner.rainbow-csv",
+        "ms-python.python"
+      ],
+	  "terminal.integrated.defaultProfile.linux": "bash"
+    }
+  }
+}
