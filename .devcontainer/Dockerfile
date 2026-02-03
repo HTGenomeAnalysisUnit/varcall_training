@@ -28,8 +28,7 @@ RUN curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bi
 	&& rm -rf bin
 
 # 4. Create the directory
-RUN mkdir -p ${MAMBA_ROOT_PREFIX} \
-	&& chmod -R 775 ${MAMBA_ROOT_PREFIX}
+RUN mkdir -p ${MAMBA_ROOT_PREFIX}
 
 # 6. Create the environment and install tools
 # We create a 'bioinfo' env but also initialize the shell so commands work immediately
