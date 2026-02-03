@@ -37,7 +37,7 @@ RUN mkdir -p ${MAMBA_ROOT_PREFIX} \
 # - bwa includes: bwa mem
 # - gatk4 includes: gatk >= 4
 USER vscode
-RUN micromamba create -y -n base -c bioconda -c conda-forge \
+RUN micromamba install -y -n base -c bioconda -c conda-forge \
 	samtools \
 	bcftools \
 	htslib \
