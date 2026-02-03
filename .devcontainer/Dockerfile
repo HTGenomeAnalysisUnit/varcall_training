@@ -38,13 +38,30 @@ RUN mkdir -p ${MAMBA_ROOT_PREFIX} \
 # - gatk4 includes: gatk >= 4
 USER vscode
 RUN micromamba install -y -n base -c bioconda -c conda-forge \
-	samtools \
-	bcftools \
+	gatk4=4.6.1.0 \
+	minimap2=2.28 \
+	fastp=0.24.0 \
+	samblaster=0.1.26 \
+	bcftools=1.21 \
+	samtools=1.21 \
+	igv=2.17.4 \
+	vcfanno=0.3.5 \
 	htslib \
-	vcfanno \
-	"gatk4>=4" \
-	bwa \
-	samblaster \
+	pandas \
+	numpy \
+	pyranges \
+	htslib \
+	zlib \
+	cyvcf2 \
+	ncls \
+	truvari=4.3.1 \
+	fastqc \
+	verifybamid2 \
+	matplotlib \
+	tectonic \
+	ont-modkit
+
+RUN conda run -n base pip install git+https://github.com/fakedrtom/SVAFotate.git \
 	&& micromamba clean --all --yes
 
 # 7. Init shell for bash and zsh (standard in Codespaces)
