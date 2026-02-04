@@ -1,0 +1,48 @@
+#AF gnomad
+[[annotation]]
+file="GRCh38_gnomAD_AF.chr20.tsv.gz"
+columns = [5,6,7,8,9,14,16,17,18]
+ops=["uniq", "max", "max", "max", "uniq", "max", "max", "max", "max"]
+names=["gnomAD_FILTER","gnomAD_AF", "gnomAD_AF_controls_and_biobanks", "gnomAD_AF_popmax", "gnomAD_popmax", "gnomAD_AF_nfe", "gnomAD_nhomalt", "gnomAD_nhomalt_controls_and_biobanks", "gnomAD_nhomalt_popmax"]
+
+#spliceAI_SNV
+[[annotation]]
+file="GRCh38_spliceAI.chr20.vcf.gz"
+fields = ["SpliceAI","SpliceAI_max_DS", "SpliceAI_max_DP"]
+ops=["uniq", "max", "max"]
+names=["spliceAI_full", "spliceAI_max_DS", "spliceAI_max_DP"]
+
+#ncER
+[[annotation]]
+file="GRCh38_ncER.chr20.bed.gz"
+columns = [4]
+ops=["max"]
+names=["ncER"]
+
+#CCRs
+[[annotation]]
+file="GRCh38_CCRs.chr20.bed.gz"
+columns = [4]
+ops=["max"]
+names=["CCR_perc"]
+
+#SegDup
+[[annotation]]
+file="GRCh38_SegDup.chr20.bed.gz"
+columns = [4]
+ops=["flag"]
+names=["SegDup"]
+
+#LCR
+[[annotation]]
+file="GRCh38_LCR.chr20.bed.gz"
+columns = [3]
+ops=["flag"]
+names=["LCR"]
+
+#TFBS
+[[annotation]]
+file="GRCh38_TFBS.chr20.bed.gz"
+columns = [3,4]
+ops=["flag","uniq"]
+names=["TFBS","TFBS_name"]
