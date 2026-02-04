@@ -79,6 +79,12 @@ Follow the steps in the [raw data QC tutorial](raw_data_qc.md) tutorial to perfo
 
 We have a [small tutorial](raw_data_ont.md) demonstrating how to perform basecalling, quality qc across different basecalling models as well as an initial calling of base modifications on ONT data. This is not meant to be exhaustive and serves just as a proof-of-concept to enhance in-class explanations
 
+### 2. Resequencing and De novo genome assembly
+
+In this day we are highlighting differences between short- and long-read sequencing data in the context of resequencing and de novo genome assembly. 
+
+Follow the steps in the dedicated [tutorial](alignment_assembly.md)
+
 ## Instructors
 
 - [Edoardo Giacopuzzi](https://humantechnopole.it/en/people/edoardo-giacopuzzi/)
