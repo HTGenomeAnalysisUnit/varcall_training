@@ -42,11 +42,11 @@ Schedule for the training course, held at Human Technopole on 2026, February 2-6
 
 0. 9:30 am - 9:35 am. Day 3 introduction.
 1. 9:35 am - 11:00 am. Variant calling and genotyping [slides](https://docs.google.com/presentation/d/1ZXBybVpnuygEAlo_EZu9uXCSF2rwxUP2/edit?slide=id.p1#slide=id.p1) [trainer](https://humantechnopole.it/en/people/bruno-ariano/)
-2. 11:00 am - 13:00 am. Variant annotation and prioritization [slides](XXX) [trainer](https://humantechnopole.it/en/people/edoardo-giacopuzzi/) 
+2. 11:00 am - 13:00 am. Variant annotation and prioritization [slides](6-Variant_annotation.pdf) [trainer](https://humantechnopole.it/en/people/edoardo-giacopuzzi/)
 
 #### Afternoon
 
-3. 14:00 pm - 16:00 pm. Practical #3. [README](../hands-on/README.md) [trainer](https://github.com/HTGenomeAnalysisUnit)
+3. 14:00 pm - 16:00 pm. Practical #3. [README variant calling](../hands-on/varcall_day3/README.md), [README variant annotation](../hands-on/varannot_day3/variant_annotation.md), [trainer](https://github.com/HTGenomeAnalysisUnit)
 4. 16:00 pm - 16:30 pm. Q&A (and further planning of the next days)
 
 ### Day 4
