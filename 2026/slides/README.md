@@ -72,7 +72,7 @@ Schedule for the training course, held at Human Technopole on 2026, February 2-6
 
 0. 9:30 am - 9:35 am. Day 5 introduction.
 1. 9:35 am - 11:00 am. Seminar #3: Variant Calling in Single Cells [slides](XXX) [speaker](https://www.mdc-berlin.de/sanders)
-2. 11:00 am - 13:00 am.  Seminar #4: Pangenomics [slides](XXX) [trainer](https://humantechnopole.it/en/people/chiara.paleni/) [trainer](https://humantechnopole.it/en/people/davide-bolognini/)
+2. 11:00 am - 13:00 am.  Seminar #4: Pangenomics [slides](https://docs.google.com/presentation/d/1xxiiv3ZtMBdasuI4PcFWklc46wvMO-lZEkvARuBDxL8/edit?slide=id.p#slide=id.p) [trainer](https://humantechnopole.it/en/people/chiara.paleni/) [trainer](https://humantechnopole.it/en/people/davide-bolognini/)
 
 #### Afternoon
 
