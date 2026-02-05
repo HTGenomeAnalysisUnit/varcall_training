@@ -1,4 +1,6 @@
 
+## Access codespace [here](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=883029421&ref=main&devcontainer_path=.devcontainer%2Fdevcontainer.json&geo=EuropeWest)
+
 ```bash
 pggb -c 2 -k 101 -x auto -i haplotypes_plus_ref.fa -n 9 -o cyp2_graph
 odgi paths -i cyp2_graph/*smooth.final.og -L | grep grch > ref_path.txt  
