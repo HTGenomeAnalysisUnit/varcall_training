@@ -56,7 +56,7 @@ Schedule for the training course, held at Human Technopole on 2026, February 2-6
 #### Morning
 
 0. 9:30 am - 9:35 am. Day 4 introduction.
-1. 9:35 am - 11:00 am. Seminar #1: Somatic Variant Calling [slides](XXX) [speaker](https://www.embl.org/people/person/tobias-rausch/)
+1. 9:35 am - 11:00 am. Seminar #1: Somatic Variant Calling [slides](Rausch_Seminar1_somatic_variant_calling.pdf) [speaker](https://www.embl.org/people/person/tobias-rausch/)
 2. 11:00 am - 13:00 am.  Practical #4. [README](../hands-on/varannot_day3/variant_annotation.md), [trainer](https://github.com/HTGenomeAnalysisUnit)
 
 #### Afternoon
