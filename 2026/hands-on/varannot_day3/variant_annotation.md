@@ -135,3 +135,9 @@ This will run for approximately 3 minutes using a single CPU and will create a n
 | `-b` | Path to the bed file with allele frequencies |
 | `-v` | Path to the input VCF file |
 | `-o` | Output file path |
+
+### Inspect variants
+
+```bash
+bcftools query -f "%CHROM %POS %END %SVTYPE %Max_AF %SV_Cov" annotated_sv.vcf.gz
+```
