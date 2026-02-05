@@ -1,6 +1,6 @@
 {
   "name": "Variant Calling Training Dev Container",
-  "image": "ghcr.io/htgenomeanalysisunit/varcall_training:varcall_day3",
+  "image": "ghcr.io/htgenomeanalysisunit/varcall_training:latest",
   "workspaceFolder": "/workspaces/varcall_training",
   "remoteUser": "vscode",
   "features": {
