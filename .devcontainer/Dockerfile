@@ -58,7 +58,14 @@ RUN micromamba install -y -n base -c bioconda -c conda-forge \
 	verifybamid2 \
 	matplotlib \
 	tectonic \
-	ont-modkit
+	ont-modkit \
+	gfainject \
+	gafpack \
+	pggb \
+	bedtools=2.31.0 \
+	bwa-mem2 \
+	cosigt \
+	panplexity
 
 RUN micromamba run -n base pip install git+https://github.com/fakedrtom/SVAFotate.git \
 	&& micromamba clean --all --yes
