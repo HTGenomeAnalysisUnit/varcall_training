@@ -101,3 +101,37 @@ bcftools query \
 	-f "%CHROM %POS %REF %ALT %gnomAD_AF %BCSQ" \
 	annotated.vcf
 ```
+
+## Structural variants
+
+For structural variants we will use [SVAFotate](https://github.com/fakedrtom/SVAFotate) to annotate each variant with allele frequencies in different populations and the fraction of each variant never observed in the external populations.
+
+### Input data
+
+Data folder: `2026/hands-on/varannot_day3/input_data/`
+
+Input VCF file: `svs.chr20.vcf.gz`
+
+### Commands
+
+```bash
+svafotate annotate --cpu 1 -O vcfgz -l 500000 -c 0.001 -f 0.5 \
+	-b /workspaces/varcall_training/2026/hands-on/varannot_day3/annotations/svs/SVAFotate_core_SV_popAFs.GRCh38.v4.1.bed.gz \
+	-v /workspaces/varcall_training/2026/hands-on/varannot_day3/input_data/svs.chr20.vcf.gz \
+	-o annotated_sv.vcf.gz
+```
+
+This will run for approximately 3 minutes using a single CPU and will create a new vcf file named `annotated_sv.vcf.gz` in the current directory. This file contains a set of new INFO fields representing allele frequencies of the structural variants in different populations (1000G, gnomAD, etc.) and the fraction of each variant never observed in the external populations.
+
+**Options explained**
+
+| Option | Description |
+|--------|-------------|
+| `--cpu` | Number of threads to use |
+| `-O` | Output format |
+| `-l` | Maximum length of the SVs in annotation source to be included. This will avoid to mess up annotation by including very large events that will overlap with everything |
+| `-c` | Minimum allele frequency to consider a variant when computing the fraction of SVs never observed |
+| `-f` | Fraction of reciprocal overlap to consider 2 events of the same type the same |
+| `-b` | Path to the bed file with allele frequencies |
+| `-v` | Path to the input VCF file |
+| `-o` | Output file path |
