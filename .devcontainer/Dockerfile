@@ -47,9 +47,9 @@ RUN micromamba install -y -n base -c bioconda -c conda-forge \
 	igv=2.17.4 \
 	vcfanno=0.3.5 \
 	htslib \
-	pandas \
-	numpy \
-	pyranges \
+	pandas=1.2.3 \
+	numpy=1.22.3 \
+	pyranges=0.0.95 \
 	htslib \
 	zlib \
 	cyvcf2 \
