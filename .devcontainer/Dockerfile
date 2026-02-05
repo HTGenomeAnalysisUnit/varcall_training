@@ -54,7 +54,6 @@ RUN micromamba install -y -n base -c bioconda -c conda-forge \
 	zlib \
 	cyvcf2 \
 	ncls \
-	truvari=4.3.1 \
 	fastqc \
 	verifybamid2 \
 	matplotlib \
