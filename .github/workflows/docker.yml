@@ -3,8 +3,8 @@ name: Docker CI
 on:
   push:
     branches: main
-  paths:
-    - "./Dockerfile"
+    paths:
+      - "./Dockerfile"
 
 jobs:
   main:
