@@ -50,9 +50,9 @@ After building the pangenome graph, we can genotype a short-read sample against 
 
 First, we index the haplotype sequences with `bwa-mem2` and align the sample reads. The `-p` flag treats interleaved input, and `-h 1000` reports up to `1000` alternative hits to capture multi-mapping reads, which is crucial for accurate graph-based genotyping.
 
-​```bash
+```bash
 bwa-mem2 index haplotypes_plus_ref.fa
-bwa-mem2 mem -t 2 -p -h 1000 haplotypes_plus_ref.fa na19983.fa.gz | samtools sort -T tmp -o na19983.realigned.bam --write-index 
+bwa-mem2 mem -t 2 -p -h 1000 haplotypes_plus_ref.fa na19983.fa.gz | samtools sort -T tmp -o na19983.realigned.bam --write-index
 ```
 
 ### 5.2 Projecting Alignments to the Graph
@@ -152,7 +152,7 @@ sh filter_variants.sh cyp2_renamed_clustered.vcf cyp2_renamed_clustered_filt.vcf
 
 How many alleles now?
 
-## X. Graph construction with vg
+## 7. Graph construction with vg
 
 We can use our selected variants to build a new graph with `vg` starting from the reference.
 
